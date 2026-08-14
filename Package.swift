@@ -1,4 +1,4 @@
-// swift-tools-version: 6.3
+// swift-tools-version: 6.0
 import PackageDescription
 
 let package = Package(
@@ -8,19 +8,19 @@ let package = Package(
         .library(name: "ESimShared", targets: ["ESimShared"])
     ],
     dependencies: [
-        .package(url: "https://github.com/zendesk/sdk_messaging_ios", from: "2.25.0"),
-        .package(url: "https://github.com/zendesk/sdk_zendesk_ios", from: "3.3.0")
+        .package(url: "https://github.com/zendesk/sdk_messaging_ios", exact: "2.40.0"),
+        .package(url: "https://github.com/zendesk/sdk_zendesk_ios", exact: "3.18.0")
     ],
     targets: [
         .binaryTarget(
             name: "ESimSDKBinary",
-            url: "https://repo.netcetera.com/nexus/repository/internal-repository-release-ios/com/netcetera/esim/ESimSDK/0.0.43/ESimSDK-0.0.43-xcframework.zip",
-            checksum: "ad63993b2c1c6765312efd561e6d11abd838e1995ec420390f7044b4a547ffd6"
+            url: "https://repo.netcetera.com/nexus/repository/internal-repository-release-ios/com/netcetera/esim/ESimSDK/0.0.44/ESimSDK-0.0.44-xcframework.zip",
+            checksum: "0165c9044eeeb2d0eeb4da7689e3d30fe72247315185a3bdc69075a608303261"
         ),
         .binaryTarget(
             name: "ESimShared",
-            url: "https://repo.netcetera.com/nexus/repository/internal-repository-release/com/netcetera/esim/esim-shared-sdk-ios/0.0.43/esim-shared-sdk-ios-0.0.43-xcframework.zip",
-            checksum: "11edc22c2374c44c37ee12b0e5e1c7e8848900c5e6e5e5145bdee55992bf7f56"
+            url: "https://repo.netcetera.com/nexus/repository/internal-repository-release/com/netcetera/esim/esim-shared-sdk-ios/0.0.44/esim-shared-sdk-ios-0.0.44-xcframework.zip",
+            checksum: "3e54ab44a9f6f408e957bfe5a7b33a2c544c8f0ecadc51fd05a36d7859fc4810"
         ),
         .target(
             name: "ESimSDKKit",
