@@ -14,13 +14,13 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "ESimSDKBinary",
-            url: "https://repo.netcetera.com/nexus/repository/internal-repository-release-ios/com/netcetera/esim/ESimSDK/0.0.44/ESimSDK-0.0.44-xcframework.zip",
-            checksum: "0165c9044eeeb2d0eeb4da7689e3d30fe72247315185a3bdc69075a608303261"
+            url: "https://repo.netcetera.com/nexus/repository/internal-repository-release-ios/com/netcetera/esim/ESimSDK/0.0.45/ESimSDK-0.0.45-xcframework.zip",
+            checksum: "7046db037403fcd6b78965f3dcb9af8976d00c7eacc3c215479c73ff4325225d"
         ),
         .binaryTarget(
             name: "ESimShared",
-            url: "https://repo.netcetera.com/nexus/repository/internal-repository-release/com/netcetera/esim/esim-shared-sdk-ios/0.0.44/esim-shared-sdk-ios-0.0.44-xcframework.zip",
-            checksum: "3e54ab44a9f6f408e957bfe5a7b33a2c544c8f0ecadc51fd05a36d7859fc4810"
+            url: "https://repo.netcetera.com/nexus/repository/internal-repository-release/com/netcetera/esim/esim-shared-sdk-ios/0.0.45/esim-shared-sdk-ios-0.0.45-xcframework.zip",
+            checksum: "e7c17a051f1062da325da8cd0c970f4eb6b5608b2de92e16300d12e9507f3bb5"
         ),
         .target(
             name: "ESimSDKKit",
